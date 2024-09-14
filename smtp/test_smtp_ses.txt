@@ -1,0 +1,22 @@
+EHLO notifications.steblynskyi.com
+AUTH LOGIN
+LKDSSHGSGIBDKJHDIDHJDDKDHKJDHDKJHJKD=
+SJLKDHLKHDYODNKLNXLHUSJLKJSPUPOUPOJSPJPHX=
+MAIL FROM: no-reply@notifications.steblynskyi.com
+RCPT TO: taras.steblynskyi@steblynskyi.com
+DATA
+From: Steblynskyi <no-reply@notifications.steblynskyi.com>
+To: taras.steblynskyi@steblynskyi.com
+Subject: no-reply@notifications.steblynskyi.com TEST of SMTP config
+
+This massage was sent from no-reply@notifications.steblynskyi.com
+Hello from Taras (DevOps) Team.
+.
+QUIT
+
+# Command to send ses email
+## openssl s_client -crlf -quiet -starttls smtp -connect email-smtp.us-east-1.amazonaws.com:587 < test_smtp_ses.txt
+
+
+# DEV SMTP Account
+# base64 --input=smtp_key.txt --output=test_key_output.txt
