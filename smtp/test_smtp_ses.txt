@@ -1,7 +1,7 @@
 EHLO notifications.steblynskyi.com
 AUTH LOGIN
-LKDSSHGSGIBDKJHDIDHJDDKDHKJDHDKJHJKD=
-SJLKDHLKHDYODNKLNXLHUSJLKJSPUPOUPOJSPJPHX=
+base64key=
+base64secret=
 MAIL FROM: no-reply@notifications.steblynskyi.com
 RCPT TO: taras.steblynskyi@steblynskyi.com
 DATA
@@ -18,5 +18,5 @@ QUIT
 ## openssl s_client -crlf -quiet -starttls smtp -connect email-smtp.us-east-1.amazonaws.com:587 < test_smtp_ses.txt
 
 
-# DEV SMTP Account
+# convert to base64
 # base64 --input=smtp_key.txt --output=test_key_output.txt

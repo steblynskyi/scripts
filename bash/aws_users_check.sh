@@ -82,7 +82,7 @@ CallIAMUsers(){
 			fi
 		fi
 	fi
- 
+
 	if [[ "$lastLogin" != null ]] # User Logged in atleast once
 	then
 		loginAge=$(( ($(date +%s) - $(date --date=$lastLogin +%s)) / 86400 ))
